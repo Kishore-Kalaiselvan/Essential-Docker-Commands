@@ -13,3 +13,9 @@
 `docker stop $(docker ps -aq)` --> ***To Stop all the running Docker container***
 
 `docker rmi -f $(docker images -aq)` --> ***To Delete All the Docker images (Before using this command check wheather the containers are Stopped)***
+
+`docker login` --> ***To Login to dockerhub***
+
+`docker tag <image_id> <username>/<image_name>:<tag>` --> ***To tag the image id with your username to make the image to be pushed to docker hub***
+
+`docker push <username>/<image_name>:<tag>` --> ***To push the image to docker hub*** 
